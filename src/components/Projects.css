@@ -1,0 +1,19 @@
+/* src/components/Projects.css */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .project h2 {
+    margin-bottom: 10px;
+  }
+  
