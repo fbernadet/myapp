@@ -1,0 +1,24 @@
+.presentation {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+    align-items: flex-start; /* Aligner l'image et le texte en haut */
+    padding: 20px;
+    max-width: 400px; /* Limite la largeur totale de la section */
+    margin: 0 auto; /* Centre la section sur la page */
+  }
+  
+  .myimage {
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+  }
+  
+  .myimage img {
+    width: 50px; /* Ajuste la largeur de l'image */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+  }
+  
+  .presentation p {
+    flex: 1; /* Prend l'espace restant pour le texte */
+    line-height: 1.6;
+    text-align: justify;
+  }

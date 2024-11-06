@@ -41,6 +41,13 @@ const Projects = () => {
               {selectedProject === 'GameJam 2024' && (
                   <div className="project">
                       <h2>GameJam 2024</h2>
+                      <iframe frameborder="0" src="https://itch.io/embed/2327059" width="552" height="167"><a href="https://moustakick.itch.io/chrono-criminal">Chrono Criminal by fbernadet, Moustakick, warx7,</a></iframe>
+                      <ul>
+                        <li>Environnement: Godot</li>
+                        <li>Langage de programmation: GDScript</li>
+                        <li>lien du git: https://github.com/Moustakick/GameJam-Tension</li>
+                      </ul>
+                      <img src='/Chrono_chriminal.png'></img>
                       <p>Informations sur le projet GameJam 2024.</p>
                   </div>
               )}
