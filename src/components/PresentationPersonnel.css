@@ -1,24 +1,42 @@
-.presentation {
-    display: flex; /* Utilisation de Flexbox pour aligner les éléments */
-    align-items: flex-start; /* Aligner l'image et le texte en haut */
-    padding: 20px;
-    max-width: 400px; /* Limite la largeur totale de la section */
-    margin: 0 auto; /* Centre la section sur la page */
-  }
-  
-  .myimage {
-    margin-right: 20px; /* Espacement entre l'image et le texte */
-    flex-shrink: 0; /* Empêche l'image de rétrécir */
-  }
-  
-  .myimage img {
-    width: 50px; /* Ajuste la largeur de l'image */
-    height: auto; /* Garde les proportions de l'image */
-    border-radius: 10px; /* Ajoute des coins arrondis */
-  }
-  
-  .presentation p {
-    flex: 1; /* Prend l'espace restant pour le texte */
-    line-height: 1.6;
-    text-align: justify;
-  }
+.pres {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pres-text {
+  flex: 1;
+  padding-right: 20px; /* Espace entre le texte et l'image */
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.pres-info {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pres-info img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espace entre la photo et la section d'informations */
+}
+
+.pres-info .info {
+  text-align: center;
+}
+
+.pres-info h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.pres-info p {
+  line-height: 1.4;
+  font-size: 0.95em;
+}
