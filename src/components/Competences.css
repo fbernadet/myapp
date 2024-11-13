@@ -1,0 +1,41 @@
+.MesCompetences {
+    padding: 20px; /* Espace intérieur pour éloigner le texte des bords */
+    max-width: 80%; /* Limite la largeur pour la lisibilité */
+    margin: auto; /* Centre le contenu */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    border: 1px solid #ddd; /* Bordure autour du conteneur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.MesCompetences h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 2px solid #ddd; /* Ligne au-dessus de chaque section */
+    padding-bottom: 8px;
+}
+
+.MesCompetences h2:first-of-type {
+    border-top: none; /* Pas de ligne pour le premier titre */
+}
+
+.MesCompetences p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.MesCompetences h1 {
+    font-size: 28px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

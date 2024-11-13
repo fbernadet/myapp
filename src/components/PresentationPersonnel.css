@@ -21,8 +21,8 @@
 }
 
 .pres-info img {
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 150px;
   border-radius: 10px;
   margin-bottom: 20px; /* Espace entre la photo et la section d'informations */
 }
