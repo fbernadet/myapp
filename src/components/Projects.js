@@ -59,7 +59,9 @@ const Projects = () => {
                       <ul>
                         <li>Environnement: Godot</li>
                         <li>Langage de programmation: GDScript</li>
-                        <li>lien du git: <a href='https://github.com/fbernadet/Global-GameJam' target="_blank" rel="noopener noreferrer"/> </li>
+                        <li>lien du git: <a href='https://github.com/fbernadet/Global-GameJam' target="_blank" rel="noopener noreferrer">
+                        https://github.com/fbernadet/Global-GameJam </a> 
+                        </li>
                       </ul>
                       <p>Le thème de cette GameJam était make me laught. Nous avons alors eu l'idée de faire ce jeu où on incarne un personnage qui veut juste 
                         travailler mais chaque jour des clowns vont essayer de l'empêcher d'aller au travail et essayer de l'amener 

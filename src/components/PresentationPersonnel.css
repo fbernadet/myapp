@@ -21,8 +21,8 @@
 }
 
 .pres-info img {
-  width: 100px;
-  height: 150px;
+  width: 150px;
+  height: 200px;
   border-radius: 10px;
   margin-bottom: 20px; /* Espace entre la photo et la section d'informations */
 }
@@ -39,4 +39,41 @@
 .pres-info p {
   line-height: 1.4;
   font-size: 0.95em;
+}
+
+.info {
+    margin: auto; /* Centre le contenu */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    border: 1px solid #ddd; /* Bordure autour du conteneur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.info h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 3px solid #ddd; /* Ligne au-dessus de chaque section */
+  padding-bottom: 8px;
+}
+
+.info h2:first-of-type {
+  border-top: none; /* Pas de ligne pour le premier titre */
+}
+
+.info h3{
+  border-top: 1px dashed #ddd;
+  font-size: 16px;
+}
+
+.info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: justify;
+  padding-left: 10px;
 }

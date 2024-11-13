@@ -36,14 +36,16 @@ const Home = () => {
       <div className='pres-info'>
         <img src='/MyImage.JPG' alt="Me" />
         <div className="info">
-          <h2>Dernier stage</h2>
-          <p>Stage en imagerie ultrasonore 3D temps réel</p>
+          <h2>Expérience Professionnelle</h2>
+          <h3>Stage en imagerie ultrasonore 3D temps réel</h3>
           <p>CEA mai 2024-septembre 2024</p>
           <h2>Formation</h2>
-          <p>Diplome de Master 2 en informatique</p>
+          <h3>Diplome de Master 2 en informatique</h3>
           <p>Université de Bordeaux 2022-2024</p>
-          <p>Diplome de Licence en informatique</p>
+          <h3>Diplome de Licence en informatique</h3>
           <p>Université de Bordeaux 2018-2022</p>
+          <h3>Baccalauréat</h3>
+          <p>Lycée Jean-Moulin Langon 2015-2018</p>
           
         </div>
       </div>
