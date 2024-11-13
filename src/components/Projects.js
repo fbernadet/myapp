@@ -15,6 +15,7 @@ const Projects = () => {
       <div>
           <h1>Projets</h1>
           {/* Liste de projets avec gestionnaires de clic */}
+          <div className="List">
           <ul>
               <li onClick={() => handleProjectClick('Projets de fin d\'études')}>Projets de fin d'études</li>
               <li onClick={() => handleProjectClick('GameJam 2024')}>GameJam 2024</li>
@@ -24,6 +25,7 @@ const Projects = () => {
               <li onClick={() => handleProjectClick('Livre dont vous êtes le héros')}>Livre dont vous êtes le héros</li>
               
           </ul>
+          </div>
 
           {/* Affichage dynamique des informations du projet sélectionné */}
           <div className="projects-list">
@@ -38,8 +40,16 @@ const Projects = () => {
                       <p>
                           Durant ce projet, nous avons réalisé deux applications. La première application est un lecteur d’obj pour meta-quest 3 et la seconde application est une application qui permet de récupérer les modèles 3D de l’application 3Dslicer et de les charger dans le meta-quest. Plus précisément, avec des dicoms il est possible de reconstruire des volumes 3D dans slicer mais le visuel 3D reste sur un écran 2D. L’objectif fut donc de visualiser l’objet dans l’environnement 3D du meta-quest.
                       </p>
-                      <img src="/XR.png" alt="XR" />
-                      <img src="/OpenIGTLinkUnity.png" alt="I OpenIGTLinkUnity" />
+                      <div class="image-container">
+                            <figure >
+                                <img src="/XR.png" alt="XR" />
+                                <figcaption>Image obtenu dans l'application</figcaption>
+                            </figure>
+                            <figure >
+                                <img src="/OpenIGTLinkUnity.png" alt="I OpenIGTLinkUnity"  />
+                                <figcaption>UML de l'application XR</figcaption>
+                            </figure>
+                       </div>
                   </div>
               )}
               {selectedProject === 'GameJam 2024' && (
@@ -68,11 +78,17 @@ const Projects = () => {
                                         </a> 
                         </li>
                       </ul>
-                      <img src='/Chrono_chriminal.png'></img>
                       <p>Ce projet a été réalisé lors d'une Game Jam avec 2 de mes camarades. Le thème de cette GameJam était la tension et le défi caché était l'utilisation
                         d'une seule couleur le rouge puis faire du niveau de gris. Le moteur de jeux utilisé fut Godot. Un de mes camarades avait quelques bases 
                         sur ce moteur, mais mon autre ami et moi n'avions aucune connaissance sur celui-ci. Nous avons su apprendre en 2 jours les bases du moteur.
                       </p>
+                      <div class="image-container">
+                      <figure >
+                        <img src="/Chrono_chriminal.png" alt="Image jeu Chrono_chriminial" />
+                        <figcaption>Image tirée du jeu</figcaption>
+                      </figure>
+                      </div>
+                      
                   </div>
               )}
               
@@ -90,9 +106,15 @@ const Projects = () => {
                       <p>Lors de ce projet réalisé en groupe de 3, nous avions un dataset de mauvaise herbe et de culture et nous devions 
                         créer différents modèles de machine learning pour segmenter et classifier les mauvaises herbes en jaune (voir image) et les cultures en vert (voir image). nous avons mis en place différents modèles tels qu'un auto-encodeur, un 
                         Multi-scale connection et UNet. Nous nous sommes rendu compte de l'importance des données. En effet, dû à la ressemblance des mauvaises et des cultures, et le fait que la plupart des images
-                        n'avait en partie que du background, rendez des résultats pas représentatif.
+                        n'avait en partie que du background, rendez des résultats pas représentatifs.
                       </p>
-                      <img src='/Ia1.png'></img>
+                      <div class="image-container">
+                      <figure >
+                        <img src="/Ia1.png" alt="Image après segmentation et classification" />
+                        <figcaption>Image obtenu après Segmentation et Classification</figcaption>
+                      </figure>
+
+                      </div>
                   </div>
               )}
               {selectedProject === 'Classification de son suivant leur genre' && (
@@ -107,14 +129,31 @@ const Projects = () => {
                         https://colab.research.google.com/drive/1QnLFPEkofUIrhZJyfn7dh2deg_K-AUA_?usp=sharing </a></li>
                                         </li>
                       </ul>
+                      <p>Durant ce projet, nous avions utilisé un classifieur Catboost, un Knn et un modèle de machine learning avec du transfer learning pour classifier 
+                        des musiques suivant leur genre.
+                      </p>
                   </div>
               )}
               {selectedProject === 'Livre dont vous êtes le héros' && (
                   <div className="project">
                       <h2>Livre dont vous êtes le héros</h2>
-                      <p>Informations sur le projet GameJam 2023.</p>
+                      <p>Lors de ce projet nous avions un client référent.
+                         Notre mission consistait à répondre à ses exigences en développant une application capable de créer des livres dont le lecteur est le héros.
+                        L’objectif principal était de vérifier, au cours de la création, si les choix faits conduisaient à une fin impossible. 
+                        De plus, l’application devait offrir la possibilité d’enregistrer le résultat aux formats LaTeX et JSON, et de le charger de nouveau dans l’interface. 
+                        L’intégralité du projet a été implémentée en langage Python.</p>
+                        <div class="image-container">
+                            <figure>
+                                <img src="/interface_graphique_LVH.png" alt="Interface Graphique LVH" />
+                                <figcaption>Interface Graphique</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/UML_LVH.png" alt="Diagramme UML LVH" />
+                                <figcaption>Diagramme UML</figcaption>
+                            </figure>
+                        </div>
                   </div>
-              )}
+                )}
               
           </div>
       </div>

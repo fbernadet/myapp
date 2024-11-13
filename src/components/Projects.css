@@ -16,4 +16,85 @@
   .project h2 {
     margin-bottom: 10px;
   }
-  
+
+  .List {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour la liste des projets */
+.List ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.List li {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #444;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Effets visuels au survol */
+.List li:hover {
+    background-color: #e0e0e0;
+    transform: translateX(5px); /* petit décalage pour attirer l'attention */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.List li:active {
+    background-color: #d0d0d0;
+    transform: translateX(2px);
+}
+
+.List li::before {
+    content: "🔹";
+    color: #3498db;
+    margin-right: 8px;
+}
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes responsives */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    width: 100%; /* S'assure que le conteneur occupe toute la largeur de la fenêtre */
+    box-sizing: border-box;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Adapte la figure à la colonne de la grille */
+    max-width: 100%; /* Empêche les images de dépasser la largeur de la fenêtre */
+}
+
+figure img {
+    width: 100%; /* S'adapte à la largeur de la figure */
+    height: auto;
+    max-width: 100%; /* Limite la taille de l'image à la largeur de la figure */
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 16px; /* Augmente un peu la taille pour une meilleure lisibilité */
+    color: #444; /* Couleur légèrement plus douce */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 8px 12px; /* Espacement autour du texte pour aérer */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet de relief */
+    text-align: center;
+    max-width: 90%; /* Évite que la légende soit trop large */
+    width: fit-content; /* Ajuste la largeur à la taille du texte */
+}
