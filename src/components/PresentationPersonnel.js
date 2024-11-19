@@ -34,7 +34,7 @@ const Home = () => {
       
       {/* Section de droite : photo, formation et stage */}
       <div className='pres-info'>
-        <img src='/MyImage.JPG' alt="Me" />
+        <img src={process.env.PUBLIC_URL+'/MyImage.JPG'} alt="Mon profil" />
         <div className="info">
           <h2>Expérience Professionnelle</h2>
           <h3>Stage en imagerie ultrasonore 3D temps réel</h3>

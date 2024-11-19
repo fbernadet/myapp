@@ -42,11 +42,11 @@ const Projects = () => {
                       </p>
                       <div class="image-container">
                             <figure >
-                                <img src="/XR.png" alt="XR" />
+                                <img src={process.env.PUBLIC_URL+"/XR.png"} alt="XR" />
                                 <figcaption>Image obtenu dans l'application</figcaption>
                             </figure>
                             <figure >
-                                <img src="/OpenIGTLinkUnity.png" alt="I OpenIGTLinkUnity"  />
+                                <img src={process.env.PUBLIC_URL+"/OpenIGTLinkUnity.png"} alt="I OpenIGTLinkUnity"  />
                                 <figcaption>UML de l'application XR</figcaption>
                             </figure>
                        </div>
@@ -75,7 +75,7 @@ const Projects = () => {
                       <ul>
                         <li>Environnement: Godot</li>
                         <li>Langage de programmation: GDScript</li>
-                        <li>lien du git: <a href="https://github.com/Moustakick/GameJam-Tension" target="_blank" rel="noopener noreferrer">
+                        <li>lien du git: <a href="https://github.com/Moustakick/GameJam-Tension">
                                             https://github.com/Moustakick/GameJam-Tension
                                         </a> 
                         </li>
@@ -86,7 +86,7 @@ const Projects = () => {
                       </p>
                       <div class="image-container">
                       <figure >
-                        <img src="/Chrono_chriminal.png" alt="Image jeu Chrono_chriminial" />
+                        <img src={process.env.PUBLIC_URL+ "/Chrono_chriminal.png"} alt="Image jeu Chrono_chriminial" />
                         <figcaption>Image tirée du jeu</figcaption>
                       </figure>
                       </div>
@@ -112,7 +112,7 @@ const Projects = () => {
                       </p>
                       <div class="image-container">
                       <figure >
-                        <img src="/Ia1.png" alt="Image après segmentation et classification" />
+                        <img src={process.env.PUBLIC_URL+"/Ia1.png"} alt="Image après segmentation et classification" />
                         <figcaption>Image obtenu après Segmentation et Classification</figcaption>
                       </figure>
 
@@ -146,11 +146,11 @@ const Projects = () => {
                         L’intégralité du projet a été implémentée en langage Python.</p>
                         <div class="image-container">
                             <figure>
-                                <img src="/interface_graphique_LVH.png" alt="Interface Graphique LVH" />
+                                <img src={process.env.PUBLIC_URL +"/interface_graphique_LVH.png"} alt="Interface Graphique LVH" />
                                 <figcaption>Interface Graphique</figcaption>
                             </figure>
                             <figure>
-                                <img src="/UML_LVH.png" alt="Diagramme UML LVH" />
+                                <img src={process.env.PUBLIC_URL+"/UML_LVH.png"} alt="Diagramme UML LVH" />
                                 <figcaption>Diagramme UML</figcaption>
                             </figure>
                         </div>
