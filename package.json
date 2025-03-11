@@ -1,8 +1,8 @@
 {
-  "name": "myapp",
+  "name": "Florian Bernadet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fbernadet.github.io/myapp",
+  "homepage": "https://www.florianbernadet.fr",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
