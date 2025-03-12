@@ -40,6 +40,8 @@ const Home = () => {
           <h3>Stage en imagerie ultrasonore 3D temps réel</h3>
           <p>CEA mai 2024-septembre 2024</p>
           <h2>Formation</h2>
+          <h3>Formation Cobol Estiac Agile concept</h3>
+          <p>Noisy Le Grand 12/2024-03/2025</p>
           <h3>Diplome de Master 2 en informatique</h3>
           <p>Université de Bordeaux 2022-2024</p>
           <h3>Diplome de Licence en informatique</h3>
